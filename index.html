@@ -161,13 +161,21 @@ The open loop system is a system where it is “simply a condition on a function
 
 There is no feedback system to modify the output based on the real life result, running on a line of code with no corrective actions if it goes wrong. For example, a mechanism involving the movement of a robotic arm over to a certain of the body but no way to check if the arm is completely accurate over the exact spot or even slightly off. in the context of surgery, this is can have serious consequences as even a little bit of inaccuracy such as a few millimetres can be the difference between life or death.  
 
-In contrast, a closed loop system continuously uses feedback from sensors to measure its position and make adjustments constantly in real time, providing “enhanced accuracy, precision, and the ability to adapt to varying conditions”, maintaining stable performance even in changing environments found in surgery.  This also increases the system’s robustness to external factors and adapting to them. (SOLO close loop vs open loop control) 
+In contrast, a closed loop system continuously uses feedback from sensors to measure its position and make adjustments constantly in real time, providing “enhanced accuracy, precision, and the ability to adapt to varying conditions”, maintaining stable performance even in changing environments found in surgery.  This also increases the system’s robustness to external factors and adapting to them. (SOLO close loop vs open loop control). Common uses such as a thermostat heating system that measures the room temperature and switches the heater on or off to maintain the target temperature.
       </p>
 
   
 <h3 id=”Analysis and discussion”>Analysis and discussion - Advantages/Disadvantages of the two systems</h3>
 
+Both open-loop and closed-loop systems offer  advantages and disadvantages depending on the complexity and purpose of the task. Whilst the closed-loop system offered significant advantages in the context of surgical uses, and should be used in the case of surgery, there are still drawbacks to both systems.  
 
+The open loop system is significantly easier to design and implement making it less expensive and requiring fewer components. By operating using a fixed set of instructions,  there is no need for sensors or continuous monitoring. This can make the system faster in execution, as it does not spend time processing feedback signals. Furthermore, because there are fewer electronic components involved, open-loop systems are generally less prone to electrical faults and require less maintenance. Thus we can see how open-loop systems may be more useful in certain situtions that are not as serious as surgery, where precision is not as important. In simple, repetitive and low risk tasks open loop systems are much more practitcal, such as automatic washing machines that follow a pre set procedure for different settings, of washing, rising or drying. Another example would be single heat microwave ovens that operate for a fixed period of time without checking for food temperature. These systems are reliable, inexpensive and efficient for routine tasks where small errors dont have serious consequences, unlike surgical robots, where precision and adaptability is a major concern. 
+
+While closed loop systems offer many significant advantages in the case that they cannot be replaced by open systems in certain situations but can replace open systems almost all of the system, only when disregarding costs or efficiency. These drawbacks highlight it disadvantages: the inclusion of such sensors, controllers and signal sensing components adds significant costs to the system, whilst also making it more complex and difficult to maintain. The added complexity of multiple components can make it difficult for engineers to design a product to fit in tight spaces eg in the compact structure of a surgical robot where every inch of the available space must be used efficiently. Additionally, the need for precise calibration of each sensor increases the time and expertise required during setup and maintenance. If any single sensor fails or provides inaccurate data, the entire feedback loop can become unstable which may result in serious consequences for the user/patient.  
+
+Despite these challenges, however, the advantages of closed-loop systems often outweigh its limitations in critical applications such as surgery, where responsiveness and controlled motion are of upmost importance for safe and reliable operation. Thus, we can see how while closed loop systems can be more demanding in design and cost, these systems provide the  stability, responsiveness, and reliability necessary for high-stakes operations like robotic surgery, where consistent control is far more important than simplicity and low costs.   
+
+In the context of surgery, these systems are likely to be government-funded and checked in line towards regulations and undergo many system tests, so budget and faulty loops shouldnt be an issue. 
 
   
 </html>
@@ -209,7 +217,7 @@ In contrast, a closed loop system continuously uses feedback from sensors to mea
 
 <h3 id="References">References</h3>
 
-<p>Angluin, D (1988), Queries and concept learning. <i>Machine Learning</i>, 2(4), 319–342.</p>
+<p>Solo Motor Controllers SRL. (2023) Close Loop vs. Open Loop Motor Control: The Definitive Guide. Available at: https://www.solomotorcontrollers.com/blog/close-loop-vs-open-loop/ (Accessed: 29 October 2025).</p>
 
 <p>Brinker, K (2003), Incorporating Diversity in Active Learning with Support Vector Machines,
 Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003).</p>
